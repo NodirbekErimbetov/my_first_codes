@@ -218,9 +218,9 @@
 # else :
 #     print("Hush kelibsiz : ")
 
-# son = int(input("Son kiriting: "))
-# bolinuvchilar = []
-# for n in range(2, 11):
-#     if son % n == 0:
-#         bolinuvchilar.append(n)
-# print(f"{son} soni {bolinuvchilar} ga qoldiqsiz bo'linadi")
+son = int(input("Son kiriting: "))
+bolinuvchilar = []
+for n in range(2, 11):
+    if son % n == 0:
+        bolinuvchilar.append(n)
+print(f"{son} soni {bolinuvchilar} ga qoldiqsiz bo'linadi")
