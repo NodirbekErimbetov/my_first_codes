@@ -218,9 +218,147 @@
 # else :
 #     print("Hush kelibsiz : ")
 
-son = int(input("Son kiriting: "))
-bolinuvchilar = []
-for n in range(2, 11):
-    if son % n == 0:
-        bolinuvchilar.append(n)
-print(f"{son} soni {bolinuvchilar} ga qoldiqsiz bo'linadi")
+# son = int(input("Son kiriting: "))
+# bolinuvchilar = []
+# for n in range(2, 11):
+#     if son % n == 0:
+#         bolinuvchilar.append(n)
+# print(f"{son} soni {bolinuvchilar} ga qoldiqsiz bo'linadi")
+
+#
+# print("O'qigan kitoblaringizni kiriting agar hammasini kiritib bo'lsangiz 'stopni' kiriting :")
+# while True :
+#     qiymat = input()
+#     if qiymat.lower() != 'stop':
+#         continue
+#     else:
+#         print("Dastur to'xtadi!")
+
+# yosh =("Yoshingizni kiriting(agar dasturni to'xtatmoqchi bo'lsangiz exit yoli quit ni yozing):")
+#
+# narh = 0
+# while True:
+#     qiymat = input(yosh)
+#     if qiymat == 'quit' or qiymat == 'exit':
+#         break
+#     qiymat = int(input())
+#     if int(yosh) == 7:
+#         narh = 2000
+#     if int(yosh) > 7 and int (yosh )<= 18:
+#         narh = 3000
+#     if int (yosh) > 18 and int (yosh) <= 65:
+#         narh = 10000
+#     if int(yosh) > 65 :
+#         narh = 'bepul'
+#     print("Sizga kirish ", narh)
+# print("Dastur tugadi!")
+
+
+# savol = "Yoshingizni kiriting:"
+# while True :
+#     qiymat = input(savol)
+#     if qiymat == 'exit' or qiymat =='quit':
+#         break
+#     yosh = int(qiymat)
+#     if yosh == 7:
+#         narh = 2000
+#     if yosh > 7 and yosh <= 18:
+#         narh = 3000
+#     if yosh > 18 and yosh <= 65:
+#         narh = 10000
+#     if yosh > 65 :
+#         narh = 'bepul'
+#     print("Sizga kirish", narh)
+
+# savol = "Yoshingizni kiriting: "
+#
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit' or qiymat == 'quit':
+#         break
+#     yosh = int(qiymat)
+#
+#     if yosh < 7:
+#         narh = 2000
+#     elif 7 <= yosh < 18:
+#         narh = 3000
+#     elif 18 <= yosh < 65:
+#         narh = 10000
+#     else:
+#         narh = 0
+#
+#     if narh == 0:
+#         print("Sizga chipta bepul")
+#     else:
+#         print(f"Chipta {narh} so'm")
+
+# savol = "Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+#
+# while True:
+#     son = input(savol)
+#     # qiymat = str(savol)
+#     if int(son) > 0:
+#         ildiz = float(int(son) ** (0.5))
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
+#     elif qiymat.lower() == 'exit':
+#         break
+
+
+#
+# mahsulotlar = [ ]
+# ishora = True
+# n = 0
+# while ishora :
+#     savol = input("Zakaz bermoqhi bo'lgan mahsulotlaringizni yozing: ")
+#     mahsulotlar.append(savol)
+#     savol1 = input(("Yana kiritasizmi (ha / yo'q) "))
+#     if savol1 != 'ha' :
+#         ishora = False
+# for i in mahsulotlar:
+#      print(f"Sizning {n+1}-zakazingiz ",i)
+#      n += 1
+
+# print("Mahsulotlar narhini kiritib chiqamiz")
+# mahsulotlar = { }
+# ishora = True
+# n = 0
+# while ishora :
+#     nom = input(f"{n+1}-mahsulot nomini kiriting: ")
+#     narh = input(f"{nom.title()}ning narhini kiriting:")
+#     mahsulotlar[nom] = int(narh)
+#     n += 1
+#
+#     savol = input("Yana kiritasizmi(ha/yo'q): ")
+#     if savol != 'ha' :
+#         ishora = False
+#
+# for nom , narh in mahsulotlar.items() :
+#     print(f"{nom.title()}ning narhi {narh} ")
+
+son = int(input("Necha xil meva olmoqchisiz.\n"))
+#
+# bor_mahsulot = ['olma', 'behi', 'qulupnay', 'uzum', 'nok', 'anor', 'erik', 'shaftoli']
+#
+# zakaz_ohirgi = []
+# zakaz = []
+# for n in range(son):
+#     kirit = input(f"{n + 1}- mahsulotni kiriting: ")
+#     zakaz.append(kirit)
+#
+# for zakaz_olingan in zakaz:
+#     if zakaz_olingan in bor_mahsulot:
+#         zakaz_ohirgi.append(zakaz_olingan.title())
+#
+# print(f"Bizda soz bergan zakazlardan quyidagilar bor \n {zakaz_ohirgi}")
+
+# bor_mahsulot = { }
+# zakaz_ohirgi = [ ]
+# zakaz = [ ]
+# for n in range(son) :
+#     kirit = input(f"{n+1}- mahsulotni kiriting: ")
+#     son = input(f"{kirit}ning narhini kiriting: ")
+#     bor_mahsulot[kirit] = int(son)
+# for kirit , son in bor_mahsulot.items() :
+#     print(f"{kirit} ning narhi {son}")
